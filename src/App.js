@@ -83,15 +83,15 @@ setTable3(newtable);
     <div className="App">
           Learn React
           <Input SetTable={SetTable} />
-          <h1>Table1</h1>
+          <h1>Electronics</h1>
           <div>
             <ShowMenu table={table1} yes={isitemdeleted}/>
           </div>
-          <h1>Table2</h1>
+          <h1>SkinCare</h1>
           <div>
             <ShowMenu table={table2} yes={isitemdeleted}/>
           </div>
-          <h1>Table3</h1>
+          <h1>Food</h1>
           <div>
             <ShowMenu table={table3} yes={isitemdeleted}/>
           </div>

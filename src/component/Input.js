@@ -39,13 +39,13 @@ props.SetTable(obj);
                         <input type="number" onChange={onUniqueid}/>
                     <label htmlFor="price">Price:</label>
                 <input type="number" onChange={onPricechange}/>
-        <label htmlFor="Dish">Dish:</label>
+        <label htmlFor="Dish">Product:</label>
         <input type="text" onChange={onDishchange}/>
-        <label htmlFor="table">Choose Table:</label>
+        <label htmlFor="table">Choose Categpry:</label>
 <select name="cars" id="cars" onChange={onTablechange}>
-  <option value="table1">Table 1</option>
-  <option value="table2">Table 2</option>
-  <option value="table3">Table 3</option>
+  <option value="table1">Electronics</option>
+  <option value="table2">SkinCare</option>
+  <option value="table3">Food Items</option>
 </select>
 <button onClick={submitdetails}>save</button>
     </form>
