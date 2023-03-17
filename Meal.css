@@ -1,7 +1,48 @@
 .eachmeal {
   border-bottom: 1px solid grey;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 h4 {
   color: #8b0000;
+  font-size: 14px;
+}
+
+.amount {
+  display: inline-flex;
+}
+.addbtn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  border: 1px solid transparent;
+  width: 80px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #9a2a2a;
+  height: 30px;
+  justify-content: space-around;
+  margin: 30px;
+  :hover {
+    transform: scale(1.04);
+    background-color: #21e065;
+  }
+}
+
+#icon {
+  width: 10px;
+  margin-right: 0.5rem;
+}
+
+.quantity {
+  border: 1px solid grey;
+  padding: 6px;
+  margin-left: 0.5rem;
+  margin-bottom: 20px;
 }
