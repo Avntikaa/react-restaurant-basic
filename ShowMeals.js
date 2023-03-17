@@ -1,9 +1,8 @@
 import React from 'react'
 import Meal from './Meal'
 import './ShowMeal.css'
-import OrderModal from './OrderModal'
 
-const ShowMeals = () => {
+const ShowMeals = (props) => {
     const meals=[{
         dish:'sushi',desc:'Finiest fish and veggies',price:22.99
     },{
@@ -18,12 +17,11 @@ const ShowMeals = () => {
     <div className='meallist'>
         {
             meals.map((meal)=>{
-            return <Meal meal={meal}/>
+            return <Meal meal={meal} addtocart={props.addtocart}/>
             }
             )
         }
     </div>
-          <OrderModal/>
           </>
 
   )

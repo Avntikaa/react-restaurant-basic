@@ -4,13 +4,13 @@ import './Header.css'
 import meals from './mealheader.jpg'
 import OrderModal from '../Meals/OrderModal'
 
-const Header = () => {
+const Header = (props) => {
+  console.log(props.count);
   const [openModal,setOpenModal]=useState(false);
-
-  const opencloseModal=()=>{
+const opencloseModal=()=>{
     setOpenModal((prev)=>!prev);
   }
-
+  
   return (
     <>
     <div>
@@ -20,7 +20,7 @@ const Header = () => {
         <button className='cartbtn' onClick={opencloseModal}>
           <span id='icon'><FaCartArrowDown size={20}/></span>
 <span>Your Cart</span>
-   <span id='badge'>0</span>
+   <span id='badge'>{props.count}</span>
           </button>
     </div>
     <div className='header-image'>

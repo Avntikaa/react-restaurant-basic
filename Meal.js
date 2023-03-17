@@ -3,6 +3,9 @@ import { FaPlus } from 'react-icons/fa'
 import './Meal.css'
 
 const Meal = (props) => {
+  function addCart(){
+props.addtocart();
+  }
   return (
     <div className='eachmeal'>
       <span> 
@@ -15,12 +18,11 @@ const Meal = (props) => {
             <h4>Amount</h4>
             <h4 className='quantity'>1</h4>
           </div>
-          <button className='addbtn'>
+          <button className='addbtn' onClick={addCart}>
              <span id='icon'><FaPlus/></span>
           <span>Add</span>
           </button>
         </span>
-      
 
     </div>
   )
