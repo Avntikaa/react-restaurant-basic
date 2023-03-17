@@ -1,0 +1,49 @@
+.cartbtn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  width: 280px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  background-color: #964b00;
+  height: 50px;
+  justify-content: space-around;
+  margin: 30px;
+  :hover {
+    transform: scale(1.04);
+    background-color: #21e065;
+  }
+}
+
+span {
+  border: 1px solid transparent;
+  background: #ffbe7c;
+  padding: 8px;
+  border-radius: 50%;
+}
+.heading {
+  padding: 1rem;
+}
+.middle {
+  flex: 1;
+}
+#cartbutton {
+  colo: green;
+}
+
+.cartdiv {
+  background: #c46200;
+  display: inline-flex;
+  width: 100%;
+}
