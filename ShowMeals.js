@@ -1,6 +1,7 @@
 import React from 'react'
 import Meal from './Meal'
 import './ShowMeal.css'
+import OrderModal from './OrderModal'
 
 const ShowMeals = () => {
     const meals=[{
@@ -13,6 +14,7 @@ const ShowMeals = () => {
     }
 ]
   return (
+    <>
     <div className='meallist'>
         {
             meals.map((meal)=>{
@@ -21,6 +23,9 @@ const ShowMeals = () => {
             )
         }
     </div>
+          <OrderModal/>
+          </>
+
   )
 }
 

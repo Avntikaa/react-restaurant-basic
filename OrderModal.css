@@ -1,0 +1,49 @@
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  border: 1px solid transparent;
+  width: 80px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #9a2a2a;
+  height: 30px;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+.closebtn {
+  background: white;
+  color: #9a2a2a;
+  margin-left: 170px;
+  border: 1px solid grey;
+}
+.totalprice {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.out-div {
+  width: 400px;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 450px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 10px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
