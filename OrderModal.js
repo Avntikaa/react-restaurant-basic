@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM  from 'react-dom';
 import './OrderModal.css'
 
-const Modaloverlay=()=>{
+const Modaloverlay=(props)=>{
+  function closemodal(){
+    props.closebox();
+  }
 return (
   <div className='out-div'> 
         <h3>sushi</h3>
@@ -10,15 +13,15 @@ return (
                 <h2>Total Amount</h2>
         <h4>35.62</h4>
         </span>
-<button className='closebtn'>close</button>
+<button className='closebtn' onClick={closemodal}>close</button>
 <button>order</button>
     </div>
 )
 }
-const OrderModal = () => {
+const OrderModal = (props) => {
      return (
     <>
-      {ReactDOM.createPortal(<Modaloverlay/>,document.getElementById('overlay-root'))} 
+      {ReactDOM.createPortal(<Modaloverlay closebox={props.opencloseModal}/>,document.getElementById('overlay-root'))} 
       
     </>
       
