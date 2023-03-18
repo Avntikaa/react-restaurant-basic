@@ -3,9 +3,10 @@ import { FaCartArrowDown } from 'react-icons/fa';
 import './Header.css'
 import meals from './mealheader.jpg'
 import OrderModal from '../Meals/OrderModal'
+import { useStateContext} from "../store/StateContext";
 
 const Header = (props) => {
-  console.log(props.count);
+      const cxt=useStateContext();
   const [openModal,setOpenModal]=useState(false);
 const opencloseModal=()=>{
     setOpenModal((prev)=>!prev);
@@ -20,7 +21,7 @@ const opencloseModal=()=>{
         <button className='cartbtn' onClick={opencloseModal}>
           <span id='icon'><FaCartArrowDown size={20}/></span>
 <span>Your Cart</span>
-   <span id='badge'>{props.count}</span>
+   <span id='badge'>{cxt.count}</span>
           </button>
     </div>
     <div className='header-image'>
